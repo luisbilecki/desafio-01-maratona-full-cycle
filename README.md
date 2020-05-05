@@ -4,8 +4,32 @@ Para maiores informações sobre o desafio, leia este [link](https://github.com/
 
 ## Como rodar para desenvolvimento?
 
-TODO
+Você deverá ter o `docker` instalado em seu sistema operacional.
 
-## Como executar a partir da imagem do docker?
+Com o `docker` instalado, faça o build da imagem:
 
-TODO
+`docker build -t luisbilecki/maratonafullcycle2-desafio1 . `
+
+Rode o container usando:
+
+`docker run -d -p 3000:3000 luisbilecki/maratonafullcycle2-desafio1`
+
+Acesse a URL `localhost:3000` no seu *browser* e visualize:
+
+`Maratona Full Cycle 2.0`
+
+## Como executar a partir da imagem no Dockerhub?
+
+Você deverá ter o `docker` instalado em seu sistema operacional.
+
+Baixe a imagem usando:
+
+`docker pull luisbilecki/maratonafullcycle2-desafio1:latest`
+
+Crie um container com:
+
+`docker run -d -p 3000:3000 luisbilecki/maratonafullcycle2-desafio1`
+
+Acesse a URL `localhost:3000` no seu *browser* e visualize:
+
+`Maratona Full Cycle 2.0`
